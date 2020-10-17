@@ -8,3 +8,11 @@ const P: Person = {
   name: 'Jack',
   age: 30
 }
+
+function demo(data: { x: number; y: number }) {
+  const sqrt = Math.sqrt(data.x * data.x + data.y * data.y);
+  return sqrt;
+}
+
+const sqrt = demo( {x:1,y:2} );
+console.log(sqrt);
