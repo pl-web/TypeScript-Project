@@ -14,5 +14,5 @@ function demo(data: { x: number; y: number }) {
   return sqrt;
 }
 
-const sqrt = demo( {x:1,y:2} );
+const sqrt = demo({ x: 1, y: 2 });
 console.log(sqrt);
