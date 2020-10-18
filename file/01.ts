@@ -16,3 +16,15 @@ class Animal extends Base {
     return 'wild'
   }
 }
+
+// 方法的链式调用
+class WorkFlow {
+  firstStep() {
+    return this;
+  }
+  secondStep() {
+    return this;
+  }
+}
+const workflow = new WorkFlow();
+workflow.firstStep().secondStep();
