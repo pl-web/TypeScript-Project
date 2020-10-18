@@ -13,9 +13,18 @@ class Word {
   }
 }
 class Message {
-  private form: String
-  private to: String
+  constructor(private form: String, private to: String) {
+    this.form = form
+    this.to = to
+  }
   protected Way() {
-    
+    return 'to send one message';
   }
 }
+class M extends Message {
+  constructor() {
+    super('pen', 'letter'); // 相当于调用父类的构造函数
+  }
+}
+const one_msg = new M();
+console.log('one message: ', one_msg);
