@@ -37,3 +37,10 @@ class Person_ implements Foo {
     return 'to express something'
   }
 }
+// 函数
+interface SayHello {
+  (str: string): string
+}
+const sayHello: SayHello = (something: string) => {
+  return something
+}
