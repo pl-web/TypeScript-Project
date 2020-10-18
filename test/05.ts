@@ -16,3 +16,10 @@ const getSomeoneName = (person: Person) => {
 const setSomeoneName = (person: person) => {
   console.log(person.name);
 }
+// 可以进行选择的变量属性
+interface Subject {
+  name: string;
+  category?: string;
+  readonly hot: boolean;
+}
+// 可以定义可选属性和只读属性
