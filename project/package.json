@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/superagent": "^4.1.10",
+    "superagent": "^6.1.0",
     "ts-node": "^9.0.0"
   }
 }
