@@ -16,3 +16,7 @@ const userInfo = [
   { name: 'Jenny', age: 1, id: '00001' }
 ];
 const user: [string, string, number] = ['jenny', '00001', 1];
+const userList: [string, string, number][] = [
+  ['Jack', '10001', 10],
+  ['Fnny', '10002', 11]
+]
