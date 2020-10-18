@@ -23,3 +23,17 @@ interface Subject {
   readonly hot: boolean;
 }
 // 可以定义可选属性和只读属性
+interface Event {
+  name: string;
+  [propertyName: string]: any; // 可以添加其他的属性名称和对应的内容值
+}
+interface Foo {
+  foo(): string;
+}
+// 接口的应用
+// implements
+class Person_ implements Foo {
+  foo() {
+    return 'to express something'
+  }
+}
